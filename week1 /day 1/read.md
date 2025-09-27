@@ -130,7 +130,7 @@ I captured my simulation waveform and saved it as `goodmux day 1 .png`. The wave
 - Output `y` correctly following the multiplexer logic
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day1/good_mux_waveform.png" 
+  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/mainweek1 /day 1/goodmux day 1.png." 
        alt="Simulated Wavefrom of MUX" width="600"/>
 </p>
 
