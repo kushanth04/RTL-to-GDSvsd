@@ -39,12 +39,12 @@ read_verilog -I ./src/include ./src/module/clk_gate.v
 
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/yosys_read_v.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/read_verilog.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -59,7 +59,7 @@ read_liberty -lib ./src/lib/avsddac.lib
 read_liberty -lib ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/read_lib.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -70,32 +70,32 @@ read_liberty -lib ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 synth -top vsdbabysoc
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/synth.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/clk_gate.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/rvmyth.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/hierarchy.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/soc.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/check_pass.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -114,7 +114,7 @@ opt
 abc -liberty ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/abc.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -128,7 +128,7 @@ clean -purge
 rename -enumerate
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/flatten.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -139,12 +139,12 @@ rename -enumerate
 stat
 ```
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/stat1.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/stat2.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
@@ -176,10 +176,7 @@ cd output/post_synth_sim/
 ```bash
 ./post_synth_sim.out
 ```
-<p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
-       alt="VSDBabySoC" width="600"/>
-</p>
+
 ---
 
 ### **Step 4: View the Waveforms in GTKWave**
@@ -189,7 +186,7 @@ gtkwave post_synth_sim.vcd
 ```
 ---
 <p align="center">
-  <img src="https://github.com/kushanth04/RTL-to_GDSvsd/blob/main/Week%203/yosys_read_v.png" 
+  <img src="https://github.com/kushanth04/RTL-to-GDSvsd/blob/main/week%203/task1/GLS_waveform.png" 
        alt="VSDBabySoC" width="600"/>
 </p>
 
